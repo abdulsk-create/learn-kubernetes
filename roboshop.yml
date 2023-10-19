@@ -8,3 +8,47 @@ spec:
   containers:
     - name: frontend
       image: nigel09/frontend
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: catalogue
+  labels:
+    app.kubernetes.io/name: catalogue
+spec:
+  containers:
+    - name: catalogue
+      image: nigel09/catalogue
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: cart
+  labels:
+    app.kubernetes.io/name: cart
+spec:
+  containers:
+    - name: cart
+      image: nigel09/cart
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: shipping
+  labels:
+    app.kubernetes.io/name: shipping
+spec:
+  containers:
+    - name: shipping
+      image: nigel09/shipping
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: payment
+  labels:
+    app.kubernetes.io/name: payment
+spec:
+  containers:
+    - name: payment
+      image: nigel09/payment
