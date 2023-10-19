@@ -7,7 +7,7 @@ metadata:
 spec:
   containers:
     - name: frontend
-      image: nigel09/frontend
+      image: rkalluru/frontend
 
 apiVersion: v1
 kind: Pod
@@ -18,7 +18,7 @@ metadata:
 spec:
   containers:
     - name: catalogue
-      image: nigel09/catalogue
+      image: rkalluru/catalogue
 ---
 apiVersion: v1
 kind: Pod
@@ -29,7 +29,7 @@ metadata:
 spec:
   containers:
     - name: cart
-      image: nigel09/cart
+      image: rkalluru/cart
 ---
 apiVersion: v1
 kind: Pod
@@ -40,7 +40,7 @@ metadata:
 spec:
   containers:
     - name: shipping
-      image: nigel09/shipping
+      image: rkalluru/shipping
 ---
 apiVersion: v1
 kind: Pod
@@ -51,4 +51,4 @@ metadata:
 spec:
   containers:
     - name: payment
-      image: nigel09/payment
+      image: rkalluru/payment
